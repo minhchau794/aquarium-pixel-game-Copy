@@ -1,0 +1,20 @@
+{
+  "name": "pixel-aquarium",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pixel aquarium game with a Vite production build for Vercel",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check src/main.js && node --check vite.config.js"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

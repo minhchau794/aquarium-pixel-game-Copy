@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092f42">
+  <title>Thủy cung tí hon • Pixel Aquarium</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <main class="app">
+    <header><div><p class="eyebrow">MỘT GÓC ĐẠI DƯƠNG CỦA BẠN</p><h1>Thủy cung tí hon<span>✦</span></h1><p>Chậm lại một chút. Ngắm cá bơi một vòng.</p></div><div class="wallet"><small>VÍ CỦA BẠN</small><strong><span aria-hidden="true">◈</span> <span id="coins">0</span></strong><span>đồng vỏ sò</span></div></header>
+    <section class="tank-section" aria-label="Bể cá">
+      <div class="tank-top"><span><i></i> THỦY CUNG ĐANG YÊN BÌNH</span><span id="fish-count"></span></div>
+      <canvas id="aquarium" width="960" height="480" aria-label="Bể cá pixel có cá bơi, rong biển và san hô. Chạm vào nước để thả thức ăn.">Trình duyệt cần hỗ trợ Canvas để chơi.</canvas>
+      <div class="tank-bottom"><span>✦ Chạm vào nước để thả thức ăn</span><span>24°C · Nước trong lành</span></div>
+    </section>
+    <section class="controls"><div><h2>Một chút chăm sóc</h2><p>Cá ăn no sẽ tặng bạn 5 đồng vỏ sò.</p></div><button id="feed">✦ Cho cá ăn <small>Miễn phí</small></button><button class="secondary" id="pause" aria-pressed="false">Ⅱ Tạm dừng</button></section>
+    <section class="shop"><div class="shop-heading"><div><p class="eyebrow">THÊM BẠN, THÊM VUI</p><h2>Cửa hàng cá</h2></div><span>Tối đa 20 người bạn</span></div><div id="shop-items" class="shop-grid"></div></section>
+    <p id="status" class="status" role="status" aria-live="polite">Chào mừng về nhà! Bạn có sẵn 3 người bạn nhỏ.</p>
+    <footer>Vẽ bằng pixel. Nuôi bằng yêu thương. <span>Tiến trình tự lưu trên thiết bị này.</span></footer>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
